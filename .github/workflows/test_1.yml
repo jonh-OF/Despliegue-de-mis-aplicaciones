@@ -1,0 +1,11 @@
+name: despliegue
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-lastest
+
+    steps:
+    - name: deploy1
+      run: echo "hola"
