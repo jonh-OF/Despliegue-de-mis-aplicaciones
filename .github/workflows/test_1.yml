@@ -28,3 +28,7 @@ jobs:
       run: |
         chmod +x insta.sh
         ./insta.sh
+
+
+    - name: instalacion
+      users: ./.github/actions/my-action
