@@ -1,9 +1,15 @@
 name: "my action"
 description: "test"
 
+imputs:
+  message:
+    description: "el mensaje a imprimir"
+    required: true
+    default: "hola"
+
 runs:
   using: "composite"
   steps:
     - name: deploy
-      shell: bash   # <- obligatorio en acciones compuestas
-      run: echo "hola"
+      shell: bash   
+      run: echo "hola ${{ imputs.message }}"

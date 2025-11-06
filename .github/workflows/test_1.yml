@@ -24,3 +24,5 @@ jobs:
 
       - name: Ejecutar acción personalizada
         uses: ./.github/actions/my-action  # <-- era 'users', debe ser 'uses'
+        with:
+          message: "jonh"
