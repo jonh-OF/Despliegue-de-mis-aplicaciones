@@ -1,7 +1,7 @@
 name: "my action"
 description: "test"
 
-imputs:
+inputs:
   message:
     description: "el mensaje a imprimir"
     required: true
@@ -12,4 +12,4 @@ runs:
   steps:
     - name: deploy
       shell: bash   
-      run: echo "hola ${{ imputs.message }}"
+      run: echo "hola ${{ inputs.message }}"
