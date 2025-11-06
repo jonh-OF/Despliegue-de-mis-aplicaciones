@@ -31,4 +31,4 @@ jobs:
 
 
     - name: action
-      users: ./.github/actions/my-action
+      user: ./.github/actions/my-action
