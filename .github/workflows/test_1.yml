@@ -13,27 +13,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-    
-    - name: make file
-      run: touch hola.txt
-    - name: set text
-      run: echo "mi nombre es jonh-of" >> hola.txt
-    - name: read file
-      run: cat hola.txt
+   
 
 
 
    
   
-  deploy2:
-    runs-on: ubuntu-latest
-    needs: [deploy]
 
     steps:
     - name: Checkout
       uses: actions/checkout@v5.0.0
     
-    - name: ls
-      run: ls -al
-
+    - name: instalacion
+      run: |
+        chmod +x insta.sh
+        ./insta.sh
