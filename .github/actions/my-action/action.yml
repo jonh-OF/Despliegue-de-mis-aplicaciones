@@ -4,6 +4,6 @@ description: "test"
 runs:
   using: "composite"
 
-steps:
-- name: deploy
-  run: echo "hola"
+  steps:
+   - name: deploy
+     run: echo "hola"
