@@ -3,7 +3,7 @@ description: "test"
 
 runs:
   using: "composite"
-
   steps:
-   - name: deploy
-     run: echo "hola"
+    - name: deploy
+      shell: bash   # <- obligatorio en acciones compuestas
+      run: echo "hola"
